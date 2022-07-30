@@ -15,9 +15,12 @@ input[type="text"] {
     width: 100vw;
 }
 
+.form {
+  width: 100vw;
+}
+
 .text-field {
     margin-bottom: 1rem;
-    width: 500px;
     padding-bottom: 10px;
   }
   /* стили для label */
@@ -30,9 +33,10 @@ input[type="text"] {
   }
   /* стили для input */
   .text-field__input {
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 50%;
     height: calc(2.25rem + 2px);
+    margin: 0 25%;
     padding: 1rem 1rem;
     font-family: inherit;
     font-size: 1rem;

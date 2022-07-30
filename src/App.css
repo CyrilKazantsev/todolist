@@ -1,3 +1,8 @@
+body, html { 
+  width: 100%;
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -6,17 +11,20 @@
   background-color: bisque;
   padding: 20px;
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* .Header {
+.Header {
   padding-bottom: 10px;
   width: 100vw;
-  border-bottom: 5px solid aqua;
-} */
+  /* border-bottom: 5px solid aqua; */
+}
 
 .List {
-  /* display: flex; */
-  width: 400px;
+  /* display: flex;
+  justify-content: center; */
+  width: 70vw;
   text-align: justify;
   padding-top: 50px;
 }
@@ -59,3 +67,27 @@
 .TodoItemsActive {
   background-color: rgb(212, 159, 255);
 }
+
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+  .List {
+    width: 100vw;
+  }
+  
+  .TodoItems {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .CheckBox {
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    margin-top: 5px;
+  }
+
+
+
+}
+
+
+@media (max-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
