@@ -26,7 +26,7 @@
 	}
 	
 	input[type="checkbox"].switch_1:checked{
-		background: #0ebeff;
+		background: rgb(246, 6, 66)
 	}
 	
 	input[type="checkbox"].switch_1:after{

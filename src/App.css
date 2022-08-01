@@ -9,7 +9,7 @@ body, html {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: bisque;
+  background-color: #0984e3;
   padding: 20px;
   height: 100vh;
   width: 100%;
@@ -29,14 +29,16 @@ body, html {
 
 .TodoItems {
   position: relative;
-  transition: 1s;
+  transition: 0.6s;
   cursor: default;
   display: flex;
   align-items:center;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 50px;
+  line-height: 60px;
   border-radius: 15px;
+  background-color: #74b9ff;
+  margin-bottom: 20px;
 }
 
 .ToDoText {
@@ -59,11 +61,11 @@ body, html {
 }
 
 .TodoItemsPassive {
-  background-color: bisque;
+  background-color: #74b9ff;
 }
 
 .TodoItemsActive {
-  background-color: rgb(212, 159, 255);
+  background-color: greenyellow;
 }
 
 @media (max-width:480px)  { 
@@ -82,7 +84,4 @@ body, html {
     padding-left: 10px;
     margin-top: 5px;
   }
-
-
-
 }

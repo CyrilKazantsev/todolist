@@ -22,7 +22,7 @@ input[type="text"] {
     margin-bottom: 1rem;
     padding-bottom: 10px;
   }
-  /* стили для label */
+
   .text-field__label {
     font-size: 35px;
     font-weight: 600;
@@ -30,7 +30,7 @@ input[type="text"] {
     display: block;
     margin-bottom: 0.25rem;
   }
-  /* стили для input */
+
   .text-field__input {
     display: flex;
     width: 50%;
@@ -49,14 +49,15 @@ input[type="text"] {
   }
 
   .text-field__button {
+    font-weight: 600;
     border-radius: 10px;
     margin: 10px;
     width: 150px;
-	height: 50px;
-	cursor: pointer;
-	border: 0px solid rgb(124, 58, 156);
-	background: rgb(124, 58, 156);
-	transition: 200ms;
+    height: 50px;
+    cursor: pointer;
+    border: 0px solid rgb(124, 58, 156);
+    background: #74b9ff;
+    transition: 200ms;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
      -khtml-user-select: none;
@@ -64,6 +65,7 @@ input[type="text"] {
         -ms-user-select: none;
             user-select: none;
 		-webkit-tap-highlight-color: transparent;
+    border: 1px solid black;
   }
 
   button span {
@@ -94,13 +96,15 @@ button::after {
 	transition: 500ms;
 }
 
-button:hover {
-	border: 5px solid #e148a6;
+.text-field__button:hover {
+	border: 5px solid #000000;
+  background-color: greenyellow;
 }
 
 button:hover span {
 	letter-spacing: 4px;
 	font-size: 20px;
+  color: #000000;
 }
 
 button:hover::before {

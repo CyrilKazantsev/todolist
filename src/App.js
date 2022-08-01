@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './App.css'
+import './App.sass'
 import TodoList from './ToDoListHeader/TodoList'
 import TodoItems from './ToDoItem/TodoItems'
 import Filter from './Filter/Filter'
@@ -11,11 +11,6 @@ class App extends Component {
       currentItem: {text:'', key:'', completed: false},
       filteredItems: [],
     }
-    // this.filterState = {
-    //   items: [],
-    //   currentItem: {text:'', key:''},
-    //   completed: false,
-    // }
   }
   inputElement =React.createRef();
   handleInput = e => {
@@ -47,7 +42,7 @@ class App extends Component {
       })
     }
   }
-  handleComplete = (key, e) => {
+  handleComplete = (key) => {
     let filteredItemByKey = this.state.items.filter(item => {
       return item.key === key
     })

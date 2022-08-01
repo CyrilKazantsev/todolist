@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import '../App.css'
-import "./toDoItemDeleteButton.css"
 import Slider from '../Slider/Slider'
 import DeleteButton from '../Button/button'
 class TodoItems extends Component {
@@ -29,15 +28,7 @@ createTasks = item => {
             <div className='ToDoText'>
               {item.text}
             </div>
-            {/* <div className="Finish" onClick={() => this.props.deleteItem(item.key)} >Удалить</div> */}
             <DeleteButton deleteItem={this.props.deleteItem} item = {item}/>
-
-            {/* <div className='CheckBox'>
-              <input type="checkbox" checked={this.props.completed} 
-                  onChange={() => {this.handleChange()}}
-              /> 
-            </div> */}
-       
         </div>
      )
     }
