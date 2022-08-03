@@ -86,19 +86,9 @@ input[type="text"] {
 	z-index: -1;
 }
 
-button::before {
-	border: 5px solid #9e60bd;
-	transition: 200ms;
-}
-
-button::after {
-	border: 5px solid rgb(124, 58, 156);
-	transition: 500ms;
-}
-
 .text-field__button:hover {
 	border: 5px solid #000000;
-  background-color: greenyellow;
+  background-color: #8065ff;
 }
 
 button:hover span {
